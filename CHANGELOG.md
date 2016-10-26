@@ -1,3 +1,7 @@
+## Version 1.5.0
+* Update the default docker version to 1.9.1 ( as the latest available package in the time of commiting )
+* Update docker-py package to the latest available version - 1.10.3
+
 ## Version 1.4.0
 * Update the default docker version to 1.6.2
 
