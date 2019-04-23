@@ -6,6 +6,8 @@ include:
 docker-dependencies:
   pkg.installed:
     - pkgs:
+      - pciutils
+      - procps
       - ca-certificates
 
 docker-kernel-dependencies:
@@ -16,7 +18,9 @@ docker-kernel-dependencies:
 
 docker-pkg:
   pkg.installed:
-    - name: {{ docker.pkg }}-{{ docker.pkg_version }}
+    - name: {{ docker.pkg }}
+    # - version: {{ docker.pkg_version }} -0~{{ grains.lsb_distrib_codename }}
+    - version: {{ docker.pkg_version }}
     - require:
       - pkg: docker-dependencies
       - pkg: docker-kernel-dependencies
@@ -44,3 +48,4 @@ docker:
 
 aufs:
   kmod.present
+

@@ -1,3 +1,16 @@
+## v2.1.0
+* Bump python-formula requirement to 1.6.
+* Disable linux kernel extras for newer kernels
+
+## Version 1.4.2
+* Update the default Docker version to 1.12.3 and docker-py to 1.10.6.
+* Add migration logic to handle Docker upgrade.
+* Fix Test Kitchen for testing the Salt state locally.
+* Lock down python-formula to version 1.1.5.
+
+## Version 1.4.1
+* Add capability to use different docker data directory.
+
 ## Version 1.4.0
 * Update the default docker version to 1.6.2
 

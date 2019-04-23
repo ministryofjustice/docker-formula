@@ -1,1 +1,1 @@
-git@github.com:ministryofjustice/python-formula.git
+ministryofjustice/python-formula==v1.1.7

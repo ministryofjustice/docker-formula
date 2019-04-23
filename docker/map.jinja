@@ -1,8 +1,9 @@
 {% set docker = salt['grains.filter_by']({
     'Debian': {
-        'pkg': 'lxc-docker',
-        'pkg_version': '1.6.2',
-        'py_version': '1.2.2',
+        'pkg': 'docker-engine',
+        'pkg_version': '17.05.0~ce-0~ubuntu-trusty',
+        'py_version': '1.10.6',
+        'datadir': '',
     },
     'default': 'Debian',
 }, merge=salt['pillar.get']('docker',{})) %}
