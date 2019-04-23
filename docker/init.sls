@@ -11,7 +11,7 @@ docker-dependencies:
 docker-kernel-dependencies:
   pkg.installed:
     - pkgs:
-      - linux-image-extra-{{ salt['grains.get']('kernelrelease') }}
+      - linux-modules-extra-{{ salt['grains.get']('kernelrelease') }}
     - unless: grep aufs /proc/filesystems
 
 docker-pkg:
